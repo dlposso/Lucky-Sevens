@@ -15,7 +15,7 @@ function play(){
   var die2 = 0;
   var sumOfDice = 0;
   var rollTally = 0;//Number of rolls
-  var maxHeld = 0;//Maximum amount of money reached
+  var maxAmount = 0;//Maximum amount of money reached
 
   if(startingBet > 0){
 
@@ -58,7 +58,7 @@ function play(){
     }
 
     //Displaying Results
-    document.getElementById("result").innerHTML = ('<hr width="75%" align="center" height="60px" color="green" /><br/><center><br/><br/><h1>Results</h1><table class="table table-striped" border="1" style="width: 80% height: 100% border-collapse: collapse"><tr><td>Starting Bet</td><td>$' + startingBet + '.00</td></tr><tr><td>Total Rolls Before Going Broke</td><td>'+ rollTally +'</td></tr><tr><td>Highest Amount Won</td><td>$' + maxAmount + '</td></tr><tr><td>Roll Count at Highest Amount Won</td><td>'+ numRolls + '</td></tr></table></center>');
+    document.getElementById("result").innerHTML = ('<hr width="75%" align="center" height="60px" color="green" /><br/><center><br/><br/><h1>Results</h1><table class="table table-striped" border="1" style="width: 80% height: 100% border-collapse: collapse"><tr><td>Starting Bet</td><td>$' + startingBet + '.00</td></tr><tr><td>Total Rolls Before Going Broke</td><td>'+ rollTally +'</td></tr><tr><td>Highest Amount Won</td><td>$' + maxAmount + '.00</td></tr><tr><td>Roll Count at Highest Amount Won</td><td>'+ numRolls + '</td></tr></table></center>');
 
     //changing value of Play button to let player play again
     document.getElementById("button").value = ("Play Again");
